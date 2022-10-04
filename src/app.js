@@ -73,7 +73,11 @@ class TvMaze {
     const divCard = createDOMElem("div", "card");
     const divCardBody = createDOMElem("div", "card-body");
     const h5 = createDOMElem("h5", "card-title", show.name);
-    const btn = createDOMElem("button", "btn btn-primary", "Show details");
+    const btn = createDOMElem(
+      "button",
+      "btn btn-primary btn-show-details",
+      "Show details"
+    );
     let img, p;
 
     if (show.image) {
