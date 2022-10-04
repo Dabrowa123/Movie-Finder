@@ -84,6 +84,7 @@ class TvMaze {
       if (isDetailed) {
         img = createDOMElem("div", "card-preview-bg");
         img.style.backgroundImage = `url('${show.image.original}')`;
+        btn.innerText = "Hide details";
       } else {
         img = createDOMElem("img", "card-img-top", null, show.image.medium);
       }
@@ -140,6 +141,7 @@ class TvMaze {
     const { showId } = event.target.dataset;
     getShowsByTypeId(showId).then((show) => {
       const card = this.createShowCard(show, true);
+      console.log(card.divCardBody);
       this.viewElems.showPreview.appendChild(card);
       this.viewElems.showPreview.style.display = "block";
     });
