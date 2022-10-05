@@ -54,15 +54,25 @@ body {
 
 .show-preview .card-body {
   flex-grow: 1;
-  width: 70%;
+  width: 54%;
+  margin: 0 15px;
 }
 
 .card-preview-bg {
   flex-grow: 1;
-  width: calc(1.5 * 210px);
-  height: calc(1.5 * 295px);
+  width: calc(2 * 210px);
+  height: calc(2 * 295px);
   background-size: cover;
   background-position: center;
+}
+
+.show-preview .card-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.show-preview .btn {
+  right: 40px;
 }
 
 /*  */

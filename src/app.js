@@ -82,7 +82,7 @@ class TvMaze {
 
     if (show.image) {
       if (isDetailed) {
-        img = createDOMElem("div", "card-preview-bg");
+        img = createDOMElem("img", "card-preview-bg");
         img.style.backgroundImage = `url('${show.image.original}')`;
         btn.innerText = "Hide details";
       } else {
