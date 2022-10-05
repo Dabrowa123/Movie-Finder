@@ -79,13 +79,12 @@ class TvMaze {
       "btn btn-primary btn-show-details",
       "Show details"
     );
-    let img, p;
+    let img, h6, p;
 
     if (show.image) {
       if (isDetailed) {
         img = createDOMElem("img", "card-preview-bg");
         img.style.backgroundImage = `url('${show.image.original}')`;
-        btn.innerText = "Hide details";
       } else {
         img = createDOMElem("img", "card-img-top", null, show.image.medium);
       }
@@ -102,6 +101,14 @@ class TvMaze {
           "../assets/images/Placeholder.png"
         );
       }
+    }
+
+    if (show.genres) {
+      h6 = createDOMElem(
+        "h6",
+        "genres",
+        show.genres.toString().replaceAll(",", ", ")
+      );
     }
 
     if (show.summary) {
@@ -130,6 +137,7 @@ class TvMaze {
 
     if (isDetailed) {
       btn.addEventListener("click", this.closeDetailsView);
+      btn.innerText = "Hide details";
     } else {
       btn.addEventListener("click", this.openDetailsView);
     }
@@ -137,6 +145,9 @@ class TvMaze {
     divCard.appendChild(img);
     divCard.appendChild(divCardBody);
     divCardBody.appendChild(h5);
+    if (isDetailed) {
+      divCardBody.appendChild(h6);
+    }
     divCardBody.appendChild(p);
     divCardBody.appendChild(btn);
 

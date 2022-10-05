@@ -71,6 +71,11 @@ body {
   margin-bottom: 20px;
 }
 
+.genres {
+  color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 20px;
+}
+
 .show-preview .btn {
   right: 40px;
 }
