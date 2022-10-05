@@ -79,7 +79,7 @@ class TvMaze {
       "btn btn-primary btn-show-details",
       "Show details"
     );
-    let img, h6Genres, h6Premiered, h6averageRuntime, p;
+    let img, divGenres, h6Premiered, h6averageRuntime, p;
 
     if (show.image) {
       if (isDetailed) {
@@ -104,10 +104,13 @@ class TvMaze {
     }
 
     if (show.genres) {
-      h6Genres = createDOMElem(
-        "h6",
+      divGenres = createDOMElem(
+        "div",
         "genres",
-        show.genres.toString().replaceAll(",", " ")
+        // show.genres.toString().replaceAll(",", " - ")
+        `<span class="badge badge-primary">${show.genres
+          .toString()
+          .replaceAll(",", "</span><span class='badge badge-primary'>")}</span>`
       );
     }
 
@@ -162,7 +165,7 @@ class TvMaze {
     divCard.appendChild(divCardBody);
     divCardBody.appendChild(h5);
     if (isDetailed) {
-      divCardBody.appendChild(h6Genres);
+      divCardBody.appendChild(divGenres);
       divCardBody.appendChild(h6Premiered);
       divCardBody.appendChild(h6averageRuntime);
     }
