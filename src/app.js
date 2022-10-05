@@ -23,18 +23,11 @@ class TvMaze {
       document.querySelectorAll("[data-show-name]")
     ).map((elem) => elem.dataset.showName);
 
-    // console.log(document.querySelectorAll('[id]')); //nodelist
-    // console.log(listOfIds);
-    // console.log(listOfShowNames);
-
     this.viewElems = mapListToDOMElements(listOfIds, "id");
     this.showNameButtons = mapListToDOMElements(
       listOfShowNames,
       "data-show-name"
     );
-    // console.log(this.viewElems);
-    // console.log(this.showNameButtons);
-    // console.log(Object.keys(this.showNameButtons));
   };
 
   setupListeners = () => {
@@ -70,7 +63,6 @@ class TvMaze {
   };
 
   createShowCard = (show, isDetailed) => {
-    console.log(show);
     const divCard = createDOMElem("div", "card");
     const divCardBody = createDOMElem("div", "card-body");
     const h5 = createDOMElem("h5", "card-title", show.name);
@@ -107,7 +99,6 @@ class TvMaze {
       divGenres = createDOMElem(
         "div",
         "genres",
-        // show.genres.toString().replaceAll(",", " - ")
         `<span class="badge badge-primary">${show.genres
           .toString()
           .replaceAll(",", "</span><span class='badge badge-primary'>")}</span>`
@@ -141,7 +132,7 @@ class TvMaze {
         p = createDOMElem(
           "p",
           "card-text",
-          `${show.summary.replace(/(<([^>]+)>)/gi, "").slice(0, 100)}...`
+          `${show.summary.replace(/(<([^>]+)>)/gi, "").slice(0, 93)}...`
         );
       }
     } else {

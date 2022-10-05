@@ -25,6 +25,11 @@ body {
   height: 160px;
 }
 
+.btn-show-details {
+  position: absolute;
+  bottom: 20px;
+}
+
 /* Show Preview CSS */
 
 .show-preview {
@@ -95,8 +100,3 @@ body {
 }
 
 /*  */
-
-.btn-show-details {
-  position: absolute;
-  bottom: 20px;
-}
