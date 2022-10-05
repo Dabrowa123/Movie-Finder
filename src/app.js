@@ -70,6 +70,7 @@ class TvMaze {
   };
 
   createShowCard = (show, isDetailed) => {
+    console.log(show);
     const divCard = createDOMElem("div", "card");
     const divCardBody = createDOMElem("div", "card-body");
     const h5 = createDOMElem("h5", "card-title", show.name);
@@ -89,12 +90,18 @@ class TvMaze {
         img = createDOMElem("img", "card-img-top", null, show.image.medium);
       }
     } else {
-      img = createDOMElem(
-        "img",
-        "card-img-top",
-        null,
-        "https://via.placeholder.com/210x295"
-      );
+      if (isDetailed) {
+        img = createDOMElem("img", "card-preview-bg");
+        img.style.backgroundImage = `url(https://via.placeholder.com/210x295)`;
+        btn.innerText = "Hide details";
+      } else {
+        img = createDOMElem(
+          "img",
+          "card-img-top",
+          null,
+          "https://via.placeholder.com/210x295"
+        );
+      }
     }
 
     if (show.summary) {
@@ -129,7 +136,6 @@ class TvMaze {
 
     divCard.appendChild(img);
     divCard.appendChild(divCardBody);
-    // divCardBody.appendChild(img);
     divCardBody.appendChild(h5);
     divCardBody.appendChild(p);
     divCardBody.appendChild(btn);
