@@ -82,6 +82,7 @@ class TvMaze {
 
     if (show.image) {
       if (isDetailed) {
+        // divCardBody.style.display = "flex";
         img = createDOMElem("div", "card-preview-bg");
         img.style.backgroundImage = `url('${show.image.original}')`;
         btn.innerText = "Hide details";
@@ -104,7 +105,6 @@ class TvMaze {
           "card-text",
           show.summary.replace(/(<([^>]+)>)/gi, "")
         );
-        console.log(show.summary);
       } else {
         p = createDOMElem(
           "p",
@@ -141,7 +141,6 @@ class TvMaze {
     const { showId } = event.target.dataset;
     getShowsByTypeId(showId).then((show) => {
       const card = this.createShowCard(show, true);
-      console.log(card.divCardBody);
       this.viewElems.showPreview.appendChild(card);
       this.viewElems.showPreview.style.display = "block";
     });
