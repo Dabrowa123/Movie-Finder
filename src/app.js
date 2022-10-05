@@ -79,7 +79,7 @@ class TvMaze {
       "btn btn-primary btn-show-details",
       "Show details"
     );
-    let img, h6Genres, h6Premiered, p;
+    let img, h6Genres, h6Premiered, h6averageRuntime, p;
 
     if (show.image) {
       if (isDetailed) {
@@ -107,7 +107,7 @@ class TvMaze {
       h6Genres = createDOMElem(
         "h6",
         "genres",
-        show.genres.toString().replaceAll(",", ", ")
+        show.genres.toString().replaceAll(",", " ")
       );
     }
 
@@ -116,6 +116,14 @@ class TvMaze {
         "h6",
         "premiered",
         `Premiered: ${show.premiered}`
+      );
+    }
+
+    if (show.averageRuntime) {
+      h6averageRuntime = createDOMElem(
+        "h6",
+        "averageRuntime",
+        `Time: ${show.averageRuntime} min`
       );
     }
 
@@ -156,6 +164,7 @@ class TvMaze {
     if (isDetailed) {
       divCardBody.appendChild(h6Genres);
       divCardBody.appendChild(h6Premiered);
+      divCardBody.appendChild(h6averageRuntime);
     }
     divCardBody.appendChild(p);
     divCardBody.appendChild(btn);

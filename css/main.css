@@ -72,11 +72,17 @@ body {
 }
 
 .genres {
+  font-weight: bold;
   color: rgba(0, 0, 0, 0.9);
   margin-bottom: 15px;
 }
 
 .premiered {
+  color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 15px;
+}
+
+.averageRuntime {
   color: rgba(0, 0, 0, 0.9);
   margin-bottom: 40px;
 }
