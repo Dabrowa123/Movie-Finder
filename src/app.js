@@ -82,7 +82,6 @@ class TvMaze {
 
     if (show.image) {
       if (isDetailed) {
-        // divCardBody.style.display = "flex";
         img = createDOMElem("div", "card-preview-bg");
         img.style.backgroundImage = `url('${show.image.original}')`;
         btn.innerText = "Hide details";
@@ -128,8 +127,9 @@ class TvMaze {
       btn.addEventListener("click", this.openDetailsView);
     }
 
+    divCard.appendChild(img);
     divCard.appendChild(divCardBody);
-    divCardBody.appendChild(img);
+    // divCardBody.appendChild(img);
     divCardBody.appendChild(h5);
     divCardBody.appendChild(p);
     divCardBody.appendChild(btn);
