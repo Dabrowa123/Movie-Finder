@@ -92,14 +92,14 @@ class TvMaze {
     } else {
       if (isDetailed) {
         img = createDOMElem("img", "card-preview-bg");
-        img.style.backgroundImage = `url(https://via.placeholder.com/210x295)`;
+        img.style.backgroundImage = `url("../assets/images/Placeholder.png")`;
         btn.innerText = "Hide details";
       } else {
         img = createDOMElem(
           "img",
           "card-img-top",
           null,
-          "https://via.placeholder.com/210x295"
+          "../assets/images/Placeholder.png"
         );
       }
     }
