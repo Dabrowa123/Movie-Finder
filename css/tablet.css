@@ -1,4 +1,5 @@
 .shows-wrapper .card {
   width: 29%;
+  height: initial;
   margin-bottom: 1.5%;
 }
