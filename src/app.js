@@ -84,7 +84,6 @@ class TvMaze {
       if (isDetailed) {
         img = createDOMElem("img", "card-preview-bg");
         img.style.backgroundImage = `url("../assets/images/Placeholder.png")`;
-        btn.innerText = "Hide details";
       } else {
         img = createDOMElem(
           "img",
@@ -172,6 +171,8 @@ class TvMaze {
       const card = this.createShowCard(show, true);
       this.viewElems.showPreview.appendChild(card);
       this.viewElems.showPreview.style.display = "block";
+      this.viewElems.showsWrapper.style.opacity = 0.2;
+      this.viewElems.searchBar.style.opacity = 0.2;
     });
   };
 
@@ -183,6 +184,8 @@ class TvMaze {
     closeBtn.removeEventListener("click", this.closeDetailsView);
     this.viewElems.showPreview.style.display = "none";
     this.viewElems.showPreview.innerHTML = "";
+    this.viewElems.showsWrapper.style.opacity = 1;
+    this.viewElems.searchBar.style.opacity = 1;
   };
 }
 
