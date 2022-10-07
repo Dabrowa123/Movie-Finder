@@ -31,8 +31,7 @@ body {
 }
 
 .btn-show-details {
-  position: absolute;
-  bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /* Show Preview CSS */
@@ -105,11 +104,11 @@ body {
 }
 
 .show-preview .card-text {
-  height: 75vh;
+  height: 60vh;
 }
 
 .show-preview .btn {
-  right: 40px;
+  /* right: 40px; */
 }
 
 /*  */
