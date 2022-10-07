@@ -1,3 +1,7 @@
+.container {
+  max-width: initial;
+}
+
 .shows-wrapper .card {
   width: 29%;
   height: initial;

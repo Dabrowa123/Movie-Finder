@@ -171,8 +171,8 @@ class TvMaze {
       const card = this.createShowCard(show, true);
       this.viewElems.showPreview.appendChild(card);
       this.viewElems.showPreview.style.display = "block";
-      this.viewElems.showsWrapper.style.opacity = 0.2;
-      this.viewElems.searchBar.style.opacity = 0.2;
+      this.viewElems.showsWrapper.style.opacity = 0.09;
+      this.viewElems.searchBar.style.opacity = 0.09;
     });
   };
 
