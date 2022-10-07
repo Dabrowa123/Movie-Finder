@@ -18,7 +18,7 @@ body {
 
 .shows-wrapper .card {
   width: 75%;
-  height: 570px;
+  /* max-height: 600px; */
   margin-bottom: 1.5%;
 }
 
@@ -27,11 +27,11 @@ body {
 }
 
 .card-text {
-  height: 160px;
+  height: fit-content;
 }
 
 .btn-show-details {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 /* Show Preview CSS */
@@ -107,7 +107,7 @@ body {
 }
 
 .show-preview .btn {
-  /* right: 40px; */
+  margin: 15px 0 25px 0;
 }
 
 /*  */
