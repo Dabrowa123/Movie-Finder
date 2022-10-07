@@ -1,11 +1,19 @@
 .container {
-  max-width: initial;
+  max-width: 900px;
 }
 
 .shows-wrapper .card {
   width: 29%;
-  height: initial;
+  height: 610px;
   margin-bottom: 1.5%;
+}
+
+.card-text {
+  max-height: 55%;
+}
+
+.btn-show-details {
+  margin-bottom: 50px;
 }
 
 /* Show Preview CSS */
