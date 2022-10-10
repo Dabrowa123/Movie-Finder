@@ -27,7 +27,7 @@
   <body>
     <div class="header">
       <div class="header__wrapper container">
-        <div>
+        <div class="header__logo-section">
           <div class="logo">
             <span class="logo__icon">
               <i class="bi bi-search-heart"></i>
@@ -37,17 +37,14 @@
               <span class="logo__text__finder">Finder</sp>
             </div>
           </div>
-          <br>
-          <div><h5>Find all your favourite movies with us</h5></div>
+          <div><h5>Find your favourite movies with us</h5></div>
         </div>
-        <div class="search-bar" id="searchBar">
-          <div class="search-header">
-            <div class="mb-3">
-              <label for="show-name-input" class="form-label">Movie name</label>
-              <input type="text" class="form-control" id="showNameInput" />
-            </div>
-            <button class="btn btn-primary" id="btnSearchInput">Search</button>
+        <div class="header__search-bar-section" id="searchBar">
+          <div class="header__search-bar-section__input-with-label mb-3">
+            <!-- <label for="show-name-input" class="form-label">Movie name</label> -->
+            <input type="text" class="form-control" id="showNameInput" placeholder="Movie name"/>
           </div>
+          <button class="btn btn-primary" id="btnSearchInput">Search</button>
         </div>
       </div>
     </div>
