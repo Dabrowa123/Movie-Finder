@@ -61,7 +61,10 @@ body {
 }
 
 .show-preview .card-body {
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  position: initial;
+  /* min-height: 200px; */
+  max-height: 590px;
   width: 54%;
   margin: 0 15px;
 }
@@ -103,6 +106,7 @@ body {
 }
 
 .show-preview .btn {
+  position: initial;
   right: 40px;
 }
 

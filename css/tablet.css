@@ -29,6 +29,10 @@
 
 /* Show Preview CSS */
 
+.show-preview .card-text {
+  position: initial;
+}
+
 .show-preview .card-title {
   margin-bottom: 15px;
 }
@@ -39,9 +43,9 @@
 }
 
 .show-preview .card-text {
-  min-height: 50px;
+  min-height: 200px;
 }
 
-/* .card-text {
-  margin-bottom: 25px;
-} */
+.show-preview .btn {
+  position: initial;
+}

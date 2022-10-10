@@ -73,6 +73,7 @@ body {
 
 .show-preview .card-body {
   /* width: 90vw; */
+  position: initial;
   height: 100vh;
   margin: 0 1px;
 }
@@ -114,6 +115,7 @@ body {
 }
 
 .show-preview .btn {
+  position: initial;
   margin: 15px 0 25px 0;
 }
 
