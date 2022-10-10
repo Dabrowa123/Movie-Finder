@@ -38,6 +38,7 @@ body {
 
 .show-preview {
   position: fixed;
+  top: 15%;
   left: 50%;
   display: none;
   width: 90%;
@@ -95,6 +96,10 @@ body {
 .averageRuntime {
   color: rgba(0, 0, 0, 0.9);
   margin-bottom: 40px;
+}
+
+.show-preview .card-text {
+  min-height: 240px;
 }
 
 .show-preview .btn {

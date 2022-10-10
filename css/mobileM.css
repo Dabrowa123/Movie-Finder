@@ -63,7 +63,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 100%;
+  width: 105%;
   overflow-y: scroll;
   padding-right: 17px;
   box-sizing: content-box;

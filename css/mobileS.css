@@ -61,7 +61,7 @@ body {
   /* max-width: inherit; */
   overflow-y: scroll;
   /* padding-right: 17px; */
-  /* box-sizing: content-box; */
+  box-sizing: content-box;
 }
 
 .show-preview .card-body {
