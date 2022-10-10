@@ -1,20 +1,31 @@
 .container {
-  max-width: 900px;
+  max-width: 770px;
 }
 
 .shows-wrapper .card {
   width: 29%;
-  height: 610px;
+  height: 590px;
   margin-bottom: 1.5%;
+}
+
+/* .card-title {
+  min-height: 50px;
+} */
+
+.card-body {
+  position: relative;
+  min-height: 200px;
 }
 
 .card-text {
   max-height: 55%;
 }
 
-/* .btn-show-details {
-  margin-bottom: 50px;
-} */
+.btn-show-details {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
 
 /* Show Preview CSS */
 
@@ -28,7 +39,7 @@
 }
 
 .show-preview .card-text {
-  min-height: 150px;
+  min-height: 50px;
 }
 
 /* .card-text {

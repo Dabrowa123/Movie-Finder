@@ -18,12 +18,13 @@ body {
 
 .shows-wrapper .card {
   width: 48%;
-  height: 550px;
+  height: 580px;
   margin-bottom: 1.5%;
 }
 
 .card-body {
-  max-height: 300px;
+  position: relative;
+  min-height: 320px;
 }
 
 .card-title {
@@ -34,10 +35,10 @@ body {
   height: 65%;
 }
 
-/* .btn-show-details {
+.btn-show-details {
   position: absolute;
   bottom: 20px;
-} */
+}
 
 /* Show Preview CSS */
 
