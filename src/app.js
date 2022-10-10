@@ -23,8 +23,6 @@ class TvMaze {
       document.querySelectorAll("[data-show-name]")
     ).map((elem) => elem.dataset.showName);
 
-    console.log(listOfShowNames);
-
     this.viewElems = mapListToDOMElements(listOfIds, "id");
     this.showNameButtons = mapListToDOMElements(
       listOfShowNames,
@@ -39,6 +37,15 @@ class TvMaze {
         this.setCurrentNameFilter
       );
     });
+    this.viewElems.btnSearchInput.addEventListener(
+      "click",
+      this.searchCurrentNameFilter
+    );
+  };
+
+  searchCurrentNameFilter = () => {
+    this.selectedName = "king";
+    this.fetchAndDisplayShows();
   };
 
   setCurrentNameFilter = () => {
