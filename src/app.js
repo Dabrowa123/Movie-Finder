@@ -23,6 +23,8 @@ class TvMaze {
       document.querySelectorAll("[data-show-name]")
     ).map((elem) => elem.dataset.showName);
 
+    console.log(listOfShowNames);
+
     this.viewElems = mapListToDOMElements(listOfIds, "id");
     this.showNameButtons = mapListToDOMElements(
       listOfShowNames,
