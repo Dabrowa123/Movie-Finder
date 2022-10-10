@@ -1,5 +1,37 @@
-body {
-  margin: 50px 0;
+.header {
+  background-color: #343a40;
+  color: white;
+}
+
+.header__wrapper {
+  padding-top: 30px;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo__icon {
+  font-size: 60px;
+  margin-right: 10px;
+}
+
+.logo__text {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.logo__text__movie {
+  color: #007bff;
+  font-size: 30px;
+  margin-top: 10px;
+  line-height: 31px;
+}
+
+.logo__text__finder {
+  font-size: 40px;
+  line-height: 41px;
 }
 
 .container {
@@ -9,6 +41,10 @@ body {
 .search-bar {
   margin: 30px 0;
 }
+
+/* .fa-search-heart {
+  size: 50px;
+} */
 
 .shows-wrapper {
   display: flex;
