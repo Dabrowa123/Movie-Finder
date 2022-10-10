@@ -4,8 +4,9 @@
 }
 
 .header__wrapper {
-  padding: 30px 0;
+  padding: 30px 15px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   gap: 30px;
 }
@@ -50,7 +51,7 @@
 .header__search-bar-section__input-with-label {
   margin: 0 20px 0 0 !important;
   height: 30px;
-  width: 30vw;
+  width: 80%;
 }
 
 .dropdown {
