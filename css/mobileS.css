@@ -42,7 +42,7 @@
 }
 
 .header__search-bar-section {
-  margin: 30px 0;
+  margin: 15px 0;
   display: flex;
   height: 40px;
 }
@@ -50,6 +50,7 @@
 .header__search-bar-section__input-with-label {
   margin: 0 20px 0 0 !important;
   height: 30px;
+  width: 30vw;
 }
 
 .dropdown {
