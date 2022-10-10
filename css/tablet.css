@@ -12,9 +12,9 @@
   max-height: 55%;
 }
 
-.btn-show-details {
+/* .btn-show-details {
   margin-bottom: 50px;
-}
+} */
 
 /* Show Preview CSS */
 
@@ -26,3 +26,11 @@
   color: rgba(0, 0, 0, 0.9);
   margin-bottom: 20px;
 }
+
+.show-preview .card-text {
+  min-height: 150px;
+}
+
+/* .card-text {
+  margin-bottom: 25px;
+} */
