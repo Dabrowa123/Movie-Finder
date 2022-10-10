@@ -44,7 +44,7 @@ class TvMaze {
   };
 
   searchCurrentNameFilter = () => {
-    this.selectedName = "king";
+    this.selectedName = this.viewElems.showNameInput.value;
     this.fetchAndDisplayShows();
   };
 
