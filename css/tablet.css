@@ -44,7 +44,7 @@
 /* Show Preview CSS */
 
 .show-preview .card-text {
-  position: initial;
+  /* position: initial; */
 }
 
 .show-preview .card-title {
@@ -57,9 +57,10 @@
 }
 
 .show-preview .card-text {
-  min-height: 200px;
+  min-height: 300px;
 }
 
 .show-preview .btn {
   position: initial;
+  margin: 15px 0 25px 0;
 }
