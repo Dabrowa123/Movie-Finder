@@ -98,6 +98,7 @@
   display: none;
   width: 90vw;
   height: 95vh;
+  /* height: 500px; */
   background: white;
   transform: translate(-50%, 0);
   z-index: 10;
@@ -122,14 +123,16 @@
 .show-preview .card-body {
   /* width: 90vw; */
   position: initial;
-  height: 100vh;
+  /* height: 100vh; */
+  max-height: 500px;
   margin: 0 1px;
 }
 
 .card-preview-bg {
   /* width: 100vw; */
   /* height: 100vh; */
-  height: 5000px;
+  min-height: 500px;
+  /* flex-basis: 50%; */
   background-size: cover;
   background-position: center;
 }
