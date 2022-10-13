@@ -6,10 +6,8 @@
 /* Header */
 
 .header__wrapper {
-  padding: 30px 25px;
-  display: flex;
+  padding: 30px;
   flex-direction: row;
-  justify-content: space-between;
   gap: 30px;
 }
 
@@ -18,6 +16,8 @@
   height: 30px;
   width: 30vw;
 }
+
+/* main content */
 
 .shows-wrapper .card {
   width: 29%;
