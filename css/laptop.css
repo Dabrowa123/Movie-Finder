@@ -4,8 +4,8 @@
 
 /* Header */
 
-.search-bar {
-  margin: 30px 0;
+.header__search-bar__input {
+  width: 24vw;
 }
 
 /* main content */

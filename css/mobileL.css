@@ -4,11 +4,7 @@
 
 /* Header */
 
-.search-bar {
-  margin: 30px 0;
-}
-
-.header__wrapper {
+.header .container {
   padding: 25px;
 }
 

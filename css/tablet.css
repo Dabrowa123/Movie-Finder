@@ -5,16 +5,14 @@
 
 /* Header */
 
-.header__wrapper {
+.header .container {
   padding: 30px;
   flex-direction: row;
   gap: 30px;
 }
 
-.header__search-bar-section__input-with-label {
-  margin: 0 20px 0 0 !important;
-  height: 30px;
-  width: 30vw;
+.header__search-bar__input {
+  width: 26vw;
 }
 
 /* main content */
