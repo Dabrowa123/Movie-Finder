@@ -1,9 +1,18 @@
 .container {
   max-width: 430px;
+  padding: 0 20px;
 }
 
 .search-bar {
   margin: 30px 0;
+}
+
+.header__wrapper {
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .shows-wrapper {
