@@ -180,8 +180,9 @@ class TvMaze {
       const card = this.createShowCard(show, true);
       this.viewElems.showPreview.appendChild(card);
       this.viewElems.showPreview.style.display = "block";
+      this.viewElems.header.style.opacity = 0.09;
+      this.viewElems.dropdown.style.opacity = 0.09;
       this.viewElems.showsWrapper.style.opacity = 0.09;
-      this.viewElems.searchBar.style.opacity = 0.09;
     });
   };
 
@@ -193,8 +194,9 @@ class TvMaze {
     closeBtn.removeEventListener("click", this.closeDetailsView);
     this.viewElems.showPreview.style.display = "none";
     this.viewElems.showPreview.innerHTML = "";
+    this.viewElems.header.style.opacity = 1;
+    this.viewElems.dropdown.style.opacity = 1;
     this.viewElems.showsWrapper.style.opacity = 1;
-    this.viewElems.searchBar.style.opacity = 1;
   };
 }
 
