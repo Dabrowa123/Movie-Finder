@@ -26,27 +26,3 @@
   bottom: 20px;
   left: 20px;
 }
-
-/* Show Preview CSS */
-
-.show-preview .card-text {
-  /* position: initial; */
-}
-
-.show-preview .card-title {
-  margin-bottom: 15px;
-}
-
-.averageRuntime {
-  color: rgba(0, 0, 0, 0.9);
-  margin-bottom: 20px;
-}
-
-.show-preview .card-text {
-  min-height: 300px;
-}
-
-.show-preview .btn {
-  position: initial;
-  margin: 15px 0 25px 0;
-}

@@ -93,12 +93,10 @@
   display: none;
   width: 90vw;
   height: 95vh;
-  /* height: 500px; */
   background: white;
   transform: translate(-50%, 0);
   z-index: 10;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  /* box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3); */
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -109,25 +107,12 @@
   display: flex;
   flex-direction: column;
   max-height: 100%;
-  /* max-width: inherit; */
   overflow-y: scroll;
-  /* padding-right: 17px; */
   box-sizing: content-box;
 }
 
-.show-preview .card-body {
-  /* width: 90vw; */
-  position: initial;
-  /* height: 100vh; */
-  max-height: 500px;
-  margin: 0 1px;
-}
-
 .card-preview-bg {
-  /* width: 100vw; */
-  /* height: 100vh; */
   min-height: 500px;
-  /* flex-basis: 50%; */
   background-size: cover;
   background-position: center;
 }
@@ -153,16 +138,10 @@
 
 .averageRuntime {
   color: rgba(0, 0, 0, 0.9);
-  margin-bottom: 20px;
-}
-
-.show-preview .card-text {
-  height: fit-content;
+  margin-bottom: 30px;
 }
 
 .show-preview .btn {
   position: initial;
   margin: 15px 0 25px 0;
 }
-
-/*  */
