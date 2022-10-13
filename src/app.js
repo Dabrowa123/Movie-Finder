@@ -5,7 +5,7 @@ class TvMaze {
   constructor() {
     this.viewElems = {};
     this.showNameButtons = {};
-    this.selectedName = "harry";
+    this.selectedName = "love";
     this.initializeApp();
   }
 
@@ -41,6 +41,12 @@ class TvMaze {
       "click",
       this.searchCurrentNameFilter
     );
+    this.viewElems.showNameInput.addEventListener("keypress", (event) => {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        this.searchCurrentNameFilter();
+      }
+    });
   };
 
   searchCurrentNameFilter = () => {
