@@ -1,3 +1,7 @@
+.container {
+  max-width: 470px;
+}
+
 .header {
   background-color: #343a40;
   color: white;
@@ -36,10 +40,6 @@
 .logo__text__finder {
   font-size: 40px;
   line-height: 41px;
-}
-
-.container {
-  max-width: 470px;
 }
 
 .header__search-bar-section {
