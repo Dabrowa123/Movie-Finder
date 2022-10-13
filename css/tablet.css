@@ -19,21 +19,6 @@
 
 .shows-wrapper .card {
   width: 29%;
-  height: 590px;
-  margin-bottom: 1.5%;
-}
-
-/* .card-title {
-  min-height: 50px;
-} */
-
-.card-body {
-  position: relative;
-  min-height: 200px;
-}
-
-.card-text {
-  max-height: 55%;
 }
 
 .btn-show-details {

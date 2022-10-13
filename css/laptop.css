@@ -10,28 +10,15 @@
 
 /* main content */
 
-.shows-wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
 .shows-wrapper .card {
   width: 24%;
-  height: 620px;
-  margin-bottom: 1.5%;
-}
-
-.card-title {
-  margin: 10px 0 10px 0;
-}
-
-.card-text {
-  height: 60%;
+  height: 590px;
 }
 
 .btn-show-details {
-  position: initial;
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
 }
 
 /* Show Preview CSS */

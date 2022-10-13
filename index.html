@@ -26,8 +26,9 @@
     <title>Movie Finder</title>
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <div class="container">
+
         <div class="header__logo">
           <div class="logo">
             <span class="logo__icon">
@@ -38,17 +39,22 @@
               <span class="logo__text--finder">Finder</sp>
             </div>
           </div>
+
           <div><h5>Find your favourite movies with us</h5></div>
         </div>
+
         <div class="header__search-bar" id="searchBar">
           <div class="header__search-bar__input mb-3">
             <input type="text" class="form-control" id="showNameInput" placeholder="Movie name"/>
           </div>
+
           <button class="btn btn-primary" id="btnSearchInput">Search</button>
         </div>
+
       </div>
-    </div>
-    <div class="container">
+    </header>
+
+    <main class="container">
       <div class="dropdown">
         <button
           class="btn btn-primary dropdown-toggle"
@@ -73,7 +79,7 @@
       <div class="show-preview" id="showPreview"></div>
 
       <div class="shows-wrapper" id="showsWrapper"></div>
-    </div>
+    </main>
 
     <script src="src/app.js" type="module"></script>
     <script

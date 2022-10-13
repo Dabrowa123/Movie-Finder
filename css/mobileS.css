@@ -70,21 +70,12 @@
 
 .shows-wrapper .card {
   width: 75%;
-  /* max-height: 600px; */
   margin-bottom: 1.5%;
 }
 
 .card-body {
   position: relative;
   min-height: 280px;
-}
-
-.card-title {
-  margin: 10px 0 10px 0;
-}
-
-.card-text {
-  height: fit-content;
 }
 
 .btn-show-details {

@@ -10,31 +10,6 @@
 
 /* main content */
 
-.shows-wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.shows-wrapper .card {
-  width: 48%;
-  height: 570px;
-  margin-bottom: 1.5%;
-}
-
-.card-body {
-  position: relative;
-  min-height: 300px;
-}
-
-.card-title {
-  margin: 10px 0 10px 0;
-}
-
-.card-text {
-  height: 62%;
-}
-
 .btn-show-details {
   position: absolute;
   bottom: 20px;
