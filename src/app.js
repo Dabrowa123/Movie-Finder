@@ -90,8 +90,13 @@ class TvMaze {
 
     if (show.image) {
       if (isDetailed) {
-        img = createDOMElem("img", "card-preview-bg");
-        img.style.backgroundImage = `url('${show.image.original}')`;
+        img = createDOMElem(
+          "img",
+          "card-preview-img",
+          null,
+          show.image.original,
+          `cinema poster of the movie "${show.name}"`
+        );
       } else {
         img = createDOMElem("img", "card-img-top", null, show.image.medium);
       }

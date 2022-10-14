@@ -111,7 +111,7 @@
   box-sizing: content-box;
 }
 
-.card-preview-bg {
+.card-preview-img {
   min-height: 500px;
   background-size: cover;
   background-position: center;
