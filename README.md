@@ -1,4 +1,4 @@
-# appTV
+# Moovie Finder
 
 The project was created in purpose to master pure **javascript**.
 
