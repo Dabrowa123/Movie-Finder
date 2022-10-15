@@ -1,4 +1,4 @@
-# Moovie Finder
+# Movie Finder
 
 The project was created in purpose to master pure **javascript**.
 
