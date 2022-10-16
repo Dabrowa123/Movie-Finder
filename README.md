@@ -1,7 +1,5 @@
 # Movie Finder
 
-<br />
-
 The project was created in purpose to master pure **javascript**.
 
 It is widely using **bootstrap** and **bootstrap-icons** liblaries. 
