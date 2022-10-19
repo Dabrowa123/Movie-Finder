@@ -2,9 +2,11 @@
 
 The project was created in purpose to master pure **javascript**.
 
-It is widely using **bootstrap** and **bootstrap-icons** liblaries. 
+JS code follow **Object Oriented Programming paradigm**.
 
-The code is maintained in **BEM** & **semantic** structure.
+CSS & HTML code is maintained in **BEM** & **semantic** structure.
+
+It is widely using **bootstrap** and **bootstrap-icons** liblaries. 
 
 The website is fully **RWD** & **accessible**.
 
